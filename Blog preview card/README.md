@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/Blog%20preview%20card/)
 
 ## My process
 
