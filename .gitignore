@@ -15,11 +15,8 @@
 .DS_Store
 .prettierignore
 
-QR code component/qr-code-component-figma/README.md
-QR code component/qr-code-component-figma/qr-code-component.fig
-QR code component/qr-code-component-main/design/desktop-design.jpg
-QR code component/qr-code-component-main/design/mobile-design.jpg
-QR code component/qr-code-component-main/index.html
-QR code component/qr-code-component-main/preview.jpg
-QR code component/qr-code-component-main/README.md
-QR code component/qr-code-component-main/style-guide.md
+
+/Blog preview card/blog-preview-card-figma
+/QR code component/qr-code-component-main
+/QR code component/qr-code-component-figma
+/Blog preview card/blog-preview-card-main

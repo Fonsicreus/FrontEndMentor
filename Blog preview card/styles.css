@@ -1,0 +1,90 @@
+body {
+  background-color: #f4d04eff;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  font-family: "Figtree", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  text-align: left;
+  width: 22rem;
+  padding: 1.25rem;
+  box-shadow: 8px 8px 2px #121212ff;
+  border: 1px solid #6b6b6bff;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  padding-top: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.text-yellow {
+  font-weight: 750;
+  background-color: #f4d04eff;
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+}
+
+.text-date {
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+
+.text-bold {
+  font-weight: 800;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.text-bold:hover {
+  color: #f4d04eff;
+  cursor: pointer;
+}
+
+.text-description {
+  font-weight: 500;
+  padding-top: 1rem;
+  color: #6b6b6bff;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  font-weight: 800;
+}
+
+.author:hover {
+  cursor: pointer;
+  color: #f4d04eff;
+}
+
+.author img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.75rem;
+}
+
+@media screen and (max-width: 400px) {
+
+  .container {
+    min-width: 0rem;
+    max-width: 22rem;
+  }
+
+}
