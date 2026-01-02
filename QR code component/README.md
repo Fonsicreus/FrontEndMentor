@@ -21,7 +21,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/QR%20code%20component/)
 
 ## My process
 
@@ -38,5 +38,4 @@ I learned how to use my first media query and import a font directly into CSS.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@Fonsicreus](https://www.frontendmentor.io/profile/Fonsicreus)
