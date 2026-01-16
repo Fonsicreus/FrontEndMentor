@@ -1,0 +1,74 @@
+body {
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 14px;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}
+
+.container-flex {
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 0.75vh;
+    width: 320px;
+}
+
+.avatar-img img {
+    border-radius: 5vh;
+    height: 80px;
+    margin-top: 25px;
+    margin-bottom: 16px;
+}
+
+.name-text {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.green-text {
+    font-weight: 500;
+    padding-top: 0.75vh;
+    color: #c5f82a;
+    padding-bottom: 2.5vh;
+    font-size: 11.5px;
+}
+
+.description-text {
+    color: #c2c2c2;
+    font-size: 13px;
+    padding-bottom: 2.5vh;
+    font-weight: 500;
+}
+
+.button-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 40px;
+}
+
+.button-list-button {
+    text-decoration: none;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 0.75vh;
+    padding: 1.25vh;
+    color: white;
+    width: 250px;
+    border: none;
+}
+
+.button-list-button:hover {
+    background-color: #c5f82a;
+    cursor: pointer;
+    color: black;
+}
