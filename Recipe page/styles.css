@@ -34,7 +34,14 @@ body {
 .recipe-description {
   font-weight: 500;
   color: #5f574e;
-  padding: 20px 25px 20px 30px;
+  padding: 20px 25px 40px 30px;
+}
+
+.recipe-preparation-container {
+  background-color: #fff7fc;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .recipe-preparation-title {
@@ -69,8 +76,9 @@ body {
 .recipe-list {
   font-weight: 400;
   color: #5f574e;
-  padding-left: 15px;
-  padding-right: 25px;
+  border-bottom: #ededed 3px solid;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .recipe-list li {
@@ -79,26 +87,24 @@ body {
 }
 
 .recipe-nutrition-table {
-  display: flex;
-  justify-content: center;
-  gap: 70px;
-  row-gap: 100px;
-  padding-bottom: 50px;
-  padding-right: 50px;
+  border-collapse: collapse; 
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .recipe-nutrition {
+  border-bottom: 3px solid #ededed;
+}
+
+.recipe-nutrition td {
   font-weight: 600;
   color: #5f574e;
+  padding: 10px 100px;
 }
 
-.recipe-nutrition-values {
+.recipe-nutrition td.recipe-nutrition-values {
   color: rgb(148, 86, 69);
-  font-weight: bold;
-}
-
-.recipe-row-gap {
-  padding-bottom: 8px;
+  font-weight: bolder;
 }
 
 @media (min-width: 1000px) {
