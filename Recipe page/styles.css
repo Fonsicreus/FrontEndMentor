@@ -8,19 +8,21 @@ body {
   text-align: left;
   font-size: 16.3px;
   font-family: "Outfit", sans-serif;
+  transition: all 1s ease;
 }
 
 .content {
   width: 100%;
   max-width: 720px;
   background-color: white;
+  transition: all 1s ease;
 }
 .recipe-image {
   width: 100%;
   max-width: 720px;
   height: auto;
   border-radius: 8px;
-  transition: margin-top 0.6s ease;
+  transition: all 1s ease;
 }
 
 .recipe-title {
@@ -87,7 +89,7 @@ body {
 }
 
 .recipe-nutrition-table {
-  border-collapse: collapse; 
+  border-collapse: collapse;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -108,8 +110,22 @@ body {
 }
 
 @media (min-width: 1000px) {
+  body{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 720px;
+    background-color: white;
+    border-radius: 30px;
+  }
+
   .recipe-image {
+    width: 620px;
     margin-top: 50px;
-    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
