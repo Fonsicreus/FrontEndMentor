@@ -9,6 +9,7 @@ body {
   font-size: 16.3px;
   font-family: "Outfit", sans-serif;
   transition: all 1s ease;
+  overflow-x: hidden;
 }
 
 .content {
@@ -101,7 +102,7 @@ body {
 .recipe-nutrition td {
   font-weight: 600;
   color: #5f574e;
-  padding: 10px 100px;
+  padding: 10px 50px;
 }
 
 .recipe-nutrition td.recipe-nutrition-values {
