@@ -1,0 +1,131 @@
+body {
+  background-color: #f2ebe3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 250px;
+  height: max-content;
+}
+
+.product-card {
+  background-color: white;
+  padding: 0px 30px;
+  width: 200px;
+  height: 375px;
+}
+
+.category {
+  font-size: 10px;
+  color: #6c7289;
+  font-family: Monstserrat, sans-serif;
+  font-weight: 400;
+  padding-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.product-title {
+  font-size: 28px;
+  color: #000000;
+  font-family: Fraunces, serif;
+  font-weight: 700;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #6c7289;
+  font-family: Monstserrat, sans-serif;
+  font-weight: 400;
+}
+
+.price-container {
+  margin-top: 20px;
+  display: flex;
+}
+
+.price {
+  color: #3c8067;
+  font-family: Fraunces, serif;
+  font-weight: 700;
+  font-size: 28px;
+  padding-right: 20px;
+}
+
+.original-price {
+  color: #6c7289;
+  font-family: Monstserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: line-through;
+  align-self: center;
+}
+
+.add-to-cart-button {
+  all: unset;
+  align-self: center;
+  color: white;
+  background-color: #3c8067;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.add-to-cart-button:hover {
+  background-color: #1b4133;
+  cursor: pointer;
+}
+
+.add-to-cart-button img {
+  width: 0.75em;
+}
+
+.attribution {
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 565px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 100%;
+    height: max-content;
+  }
+
+  .product-card {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .original-price {
+    align-self: center;
+  }
+
+  .add-to-cart-button {
+    margin-bottom: 20px;
+  }
+
+  .add-to-cart-button img {
+    width: 0.75em;
+  }
+}
