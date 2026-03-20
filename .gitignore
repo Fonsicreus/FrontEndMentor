@@ -15,7 +15,8 @@
 .DS_Store
 .prettierignore
 
-
+/node_modules
+/dist
 /Blog preview card/blog-preview-card-figma
 /QR code component/qr-code-component-main
 /QR code component/qr-code-component-figma
