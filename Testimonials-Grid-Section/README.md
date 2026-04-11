@@ -21,7 +21,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/QR%20code%20component/)
+- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/Testimonials-Grid-Section/)
 
 ## My process
 
@@ -34,7 +34,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-I learned how to use my first media query and import a font directly into CSS.
+When I thought I knew how to use flex box well, this exercise taught me how to do it better. I also learned how to place the image inside the container.
 
 ## Author
 

@@ -17,12 +17,12 @@
 
 /node_modules
 /dist
-/Blog preview card/blog-preview-card-figma
-/QR code component/qr-code-component-main
-/QR code component/qr-code-component-figma
-/Blog preview card/blog-preview-card-main
-/Social links profile/social-links-profile-main
-/Recipe page/recipe-page-main
-/Product Preview Card Component/product-preview-card-component-main
-/Four Card Feature Section/four-card-feature-section-master
-/Testimonials Grid Section/testimonials-grid-section-main
+/Blog-Preview-Card/blog-preview-card-figma
+/QR-Code-Component/qr-code-component-main
+/QR-Code-Component/qr-code-component-figma
+/Blog-Preview-Card/blog-preview-card-main
+/Social-Links-Profile/social-links-profile-main
+/Recipe-Page/recipe-page-main
+/Product-Preview-Card-Component/product-preview-card-component-main
+/Four-Card-Feature-Section/four-card-feature-section-master
+/Testimonials-Grid-Section/testimonials-grid-section-main

@@ -1,10 +1,10 @@
-# Frontend Mentor - Social links profile solution
+# Frontend Mentor - Blog preview card solution
 
 This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
-- [Frontend Mentor - Social links profile solution](#frontend-mentor---social-links-profile-solution)
+- [Frontend Mentor - Blog preview card solution](#frontend-mentor---blog-preview-card-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/Social%20links%20profile/)
+- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/Blog-Preview-Card/)
 
 ## My process
 
@@ -39,11 +39,11 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Mobile-first workflow
+- Desktop-first workflow
 
 ### What I learned
 
-I learned how to use the buttons, although in the end I didn't use them, because I wanted to redirect you to the links and use the <a> tag. With that, I learned that there are tags with predefined styles and that you have to normalize them.
+Here I have learned to use hovers, improve my box shadow, enhance my responsive design, and I learned how to make the shadow still visible even on smaller screens by learning about margins.
 
 ## Author
 

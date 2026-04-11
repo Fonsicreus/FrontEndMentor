@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/Four%20Card%20Feature%20Section%20Master/)
+- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/Four-Card-Feature-Section/)
 
 ## My process
 

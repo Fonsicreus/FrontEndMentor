@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/Product%20Preview%20Card%20Component/)
+- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/Product-Preview-Card-Component/)
 
 ## My process
 
