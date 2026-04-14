@@ -13,7 +13,8 @@ export default defineConfig({
         "qr-code-component": resolve(__dirname, 'QR-Code-Component/index.html'),
         "recipe-page": resolve(__dirname, 'Recipe-Page/index.html'),
         "social-links-profile": resolve(__dirname, 'Social-Links-Profile/index.html'),
-        "testimonials-grid-section": resolve(__dirname, 'Testimonials-Grid-Section/index.html')
+        "testimonials-grid-section": resolve(__dirname, 'Testimonials-Grid-Section/index.html'),
+        "article-preview-component": resolve(__dirname, 'Article-Preview-Component/index.html')
       }
     }
   }
