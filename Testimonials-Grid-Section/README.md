@@ -1,9 +1,9 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - Testimonials Grid Section solution  
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Testimonials Grid Section challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/testimonials-grid-section-ZnqqM05nzy). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
-- [Frontend Mentor - QR code component solution](#frontend-mentor---qr-code-component-solution)
+- [Frontend Mentor - Testimonials Grid Section solution](#frontend-mentor---testimonials-grid-section-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [Screenshot](#screenshot)
