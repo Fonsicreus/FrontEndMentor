@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/Newsletter-sign-up-form-with-sucess-message/)
+- Solution URL: [Solution](https://fonsicreus.github.io/FrontEndMentor/Newsletter-sign-up-form-with-success-message/)
 
 ## My process
 
