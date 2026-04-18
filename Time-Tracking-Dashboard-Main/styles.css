@@ -164,6 +164,7 @@ body {
 .activity-time {
   font-size: 40px;
   font-weight: 300;
+  padding-top: 10px;
 }
 
 .activity-previous {
