@@ -4,21 +4,13 @@ const timeFrameLabels = {
   monthly: "Last Month",
 };
 
-let currentData = [];
+import currentData from "./data.json";
+
 const timeFrameSelected = document.querySelectorAll(".timeframe p");
 
-init();
-
-async function init() {
-  try {
-    const response = await fetch("./data.json");
-    currentData = await response.json();
-
-    updateDashboard("weekly");
-    timeFrameSelected[1].classList.add("active");
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
+function init() {
+  updateDashboard("weekly");
+  timeFrameSelected[1].classList.add("active");
 }
 
 function updateDashboard(timeframe) {
@@ -48,3 +40,5 @@ timeFrameSelected.forEach((element) => {
     updateDashboard(timeframe);
   });
 });
+
+init();
