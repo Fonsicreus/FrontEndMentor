@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./scripts.js"></script>
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./images/logo.svg" alt="Splitter Logo" class="logo" />
+
+    <main class="container">
+      <div class="container-left">
+        <div class="input-group">
+          <label for="bill">Bill</label>
+          <input type="number" id="bill" placeholder="0" />
+        </div>
+
+        <div class="tip-section">
+          <label>Select Tip %</label>
+          <div class="tip-buttons">
+            <button class="tip-btn">5%</button>
+            <button class="tip-btn">10%</button>
+            <button class="tip-btn">15%</button>
+            <button class="tip-btn">25%</button>
+            <button class="tip-btn">50%</button>
+            <input type="number" id="customBtn" class="tip-custom" placeholder="Custom" />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="label-row">
+            <label for="people">Number of People</label>
+            <span id="people-error" class="error-msg"></span>
+          </div>
+          <input type="number" id="people" placeholder="0" />
+        </div>
+      </div>
+
+      <div class="container-right">
+        <div class="result-section">
+          <div class="result-row">
+            <div class="result-label">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <div class="result-value" id="tip-amount">$0.00</div>
+          </div>
+          <div class="result-row">
+            <div class="result-label">
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <div class="result-value" id="total">$0.00</div>
+          </div>
+        </div>
+        <button id="reset-btn" class="reset-btn">RESET</button>
+      </div>
+
+      <div class="attribution mobile-attribution" style="color: var(--grey-400); text-align: center; font-size: 14px">
+        Challenge by
+        <a style="color: var(--green-900)" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded
+        by <a style="color: var(--green-900)" href="https://github.com/Fonsicreus">Satella</a>.
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://github.com/Fonsicreus">Satella</a>.
+    </div>
+  </body>
+</html>

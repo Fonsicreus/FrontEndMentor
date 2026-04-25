@@ -17,6 +17,7 @@ export default defineConfig({
         "article-preview-component": resolve(__dirname, "Article-Preview-Component/index.html"),
         "newsletter-sign-up-form": resolve(__dirname, "Newsletter-sign-up-form-with-success-message/index.html"),
         "time-tracking-dashboard": resolve(__dirname, "Time-Tracking-Dashboard-Main/index.html"),
+        "tip-calculator-app": resolve(__dirname, "Tip-Calculator-App/index.html"),
       },
     },
   },
