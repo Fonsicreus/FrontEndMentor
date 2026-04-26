@@ -94,6 +94,7 @@ body {
 .input-group input:hover,
 .input-group input:focus {
   border: 2px solid var(--green-400);
+  background-color: rgb(243, 248, 251);
 }
 
 #bill {

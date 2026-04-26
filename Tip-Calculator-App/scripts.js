@@ -32,6 +32,9 @@ function calculate() {
 
 function removeActiveClasses() {
   percentButtons.forEach((btn) => btn.classList.remove("active-btn"));
+  bill.style.backgroundColor = "";
+  customBtn.style.backgroundColor = "";
+  people.style.backgroundColor = "";
 }
 
 percentButtons.forEach((btn) => {
@@ -49,8 +52,10 @@ customBtn.addEventListener("input", () => {
   if (customBtn.value === "" || customBtn.value < 0) {
     tip = 0;
     if (customBtn.value < 0) customBtn.value = "";
+    customBtn.style.backgroundColor = "";
   } else {
     tip = parseFloat(customBtn.value);
+    customBtn.style.backgroundColor = "rgb(243, 248, 251)";
   }
   calculate();
 });
@@ -58,11 +63,14 @@ customBtn.addEventListener("input", () => {
 bill.addEventListener("input", () => {
   if (bill.value < 0 && bill.value !== "") {
     bill.value = "";
+    bill.style.backgroundColor = "";
   }
   if (bill.value === "0") {
     bill.style.borderColor = "red";
+    bill.style.backgroundColor = "";
   } else {
     bill.style.borderColor = "";
+    bill.style.backgroundColor = "rgb(243, 248, 251)";
   }
   calculate();
 });
@@ -72,14 +80,17 @@ people.addEventListener("input", () => {
 
   if (people.value < 0 && people.value !== "") {
     people.value = "";
+    people.style.backgroundColor = "";
   }
 
   if (people.value === "0") {
     people.style.borderColor = "red";
+    people.style.backgroundColor = "";
     if (errorMsg) errorMsg.textContent = "Can't be zero";
   } else {
     people.style.borderColor = "";
     if (errorMsg) errorMsg.textContent = "";
+    people.style.backgroundColor = "rgb(243, 248, 251)";
   }
   calculate();
 });
