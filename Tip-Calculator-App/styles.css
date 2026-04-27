@@ -135,6 +135,7 @@ body {
   border-radius: var(--border-radius-item);
   padding: 8px 0;
   cursor: pointer;
+  height: 52px;
 }
 
 .tip-btn:hover,

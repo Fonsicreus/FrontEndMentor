@@ -4,15 +4,17 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
+- [Frontend Mentor - Interactive rating component solution](#frontend-mentor---interactive-rating-component-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [AI Collaboration](#ai-collaboration)
+  - [Author](#author)
 
 ## Overview
 
@@ -45,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to manage multiple states in a single component and handle user interaction with JavaScript.
+I learned how to pick the text of a button using the textContent property and insert this text in another component.
 
 ### AI Collaboration
 
