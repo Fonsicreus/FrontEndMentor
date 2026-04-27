@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --orange-500: hsl(25, 97%, 53%);
+  --white: hsl(0, 100%, 100%);
+  --grey-300: hsl(217, 12%, 80%);
+  --grey-500: hsl(217, 12%, 63%);
+  --grey-800: hsl(213, 19%, 24%);
+  --grey-900: hsl(213, 19%, 18%);
+  --grey-950: hsl(216, 12%, 8%);
+
+  --font-family: "Overpass", sans-serif;
+  --font-size-body: 15px;
+
+  --card-min-width: 320px;
+  --card-width: 345px;
+  --card-radius: 20px;
+  --padding: 25px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--grey-950);
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  color: var(--white);
+  padding: 20px;
+}
+
+.card {
+  background-color: var(--grey-900);
+  width: min(100%, var(--card-width));
+  min-width: var(--card-min-width);
+  border-radius: var(--card-radius);
+  padding: var(--padding);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.star-container {
+  background-color: var(--grey-800);
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: var(--white);
+  font-size: 1.6rem;
+  margin-top: 25px;
+}
+
+.description {
+  color: var(--grey-500);
+  line-height: 1.5;
+  padding-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+  padding-bottom: 15px;
+}
+
+.btn-rating {
+  background-color: var(--grey-800);
+  color: var(--grey-500);
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn-rating:hover {
+  background-color: var(--orange-500);
+}
+
+.btn-submit {
+  background-color: var(--grey-800);
+  color: var(--white);
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: var(--white);
+  color: var(--grey-900);
+}
+
+.thank-you-state {
+  align-items: center;
+}
+
+.thank-you-img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 8px;
+  padding-top: 20px;
+}
+
+.badge {
+  background-color: var(--grey-800);
+  color: var(--orange-500);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.attribution {
+  margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+  :root {
+    --card-radius: 15px;
+  }
+}
