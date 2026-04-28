@@ -20,6 +20,7 @@ export default defineConfig({
         "tip-calculator-app": resolve(__dirname, "Tip-Calculator-App/index.html"),
         "interactive-rating-component": resolve(__dirname, "Interactive-Rating-Component/index.html"),
         "faq-accordion": resolve(__dirname, "Faq-accordion/index.html"),
+        "contact-form": resolve(__dirname, "Contact-Form/index.html"),
       },
     },
   },

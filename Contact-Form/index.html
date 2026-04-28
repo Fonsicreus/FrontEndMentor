@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./scripts.js"></script>
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="success-banner" class="success-banner">
+      <div class="success-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+          <path fill="#fff" d="M14.28 7.72a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Z"/>
+          <path fill="#fff" fill-rule="evenodd" d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-1.5 0a8.5 8.5 0 1 1-17 0 8.5 8.5 0 0 1 17 0Z" clip-rule="evenodd"/>
+        </svg>
+        <strong>Message Sent!</strong>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <main class="container">
+      <h1>Contact Us</h1>
+
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="name-group">
+            <p>First Name *</p>
+            <input type="text" id="first-name" autocomplete="given-name" />
+          </div>
+          <div class="name-group">
+            <p>Last Name *</p>
+            <input type="text" id="last-name" autocomplete="family-name" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" autocomplete="email" />
+        </div>
+
+        <div class="form-group">
+          <label style="padding-bottom: 12px">Query Type *</label>
+          <div class="query-row">
+            <div class="query-option" id="query-general">
+              <span class="radio-circle"></span>
+              <span>General Enquiry</span>
+            </div>
+            <div class="query-option" id="query-support">
+              <span class="radio-circle"></span>
+              <span>Support Request</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message"></textarea>
+        </div>
+
+        <div class="form-group consent-group">
+          <input type="checkbox" id="consent" />
+          <label for="consent" style="padding-bottom: 0px">I consent to being contacted by the team *</label>
+        </div>
+
+        <button class="submit-btn">Submit</button>
+      </form>
+    </main>
+
+    <footer class="attribution" style="padding-top: 20px; color: red">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by
+      <a href="https://github.com/Fonsicreus">Satella</a>.
+    </footer>
+  </body>
+</html>
