@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --white: hsl(0, 100%, 100%);
+  --purple-100: hsl(275, 100%, 97%);
+  --purple-600: hsl(292, 16%, 49%);
+  --purple-950: hsl(292, 42%, 14%);
+
+  --font-family: "Work Sans", sans-serif;
+  --font-size-body: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--purple-100);
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  color: var(--purple-950);
+  padding: 40px 20px;
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  z-index: -1;
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}
+
+.main-container {
+  background-color: var(--white);
+  width: 610px;
+  padding: 40px 40px 20px 40px;
+  border-radius: 16px;
+  box-shadow: 0px 20px 20px #edc6ff;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 10px;
+}
+
+.faq-header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--purple-950);
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--purple-100);
+  padding: 24px 0;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 20px;
+}
+
+.question-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--purple-950);
+  transition: color 0.3s ease;
+}
+
+.question-container:hover .question-text {
+  color: #aa26e6;
+}
+
+.description {
+  color: var(--purple-600);
+  line-height: 1.5;
+  max-height: 95px;
+  opacity: 1;
+  margin-top: 20px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.hidden {
+  display: none;
+}
+
+.description.hidden {
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+  pointer-events: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    max-width: 360px;
+  }
+
+  .background-container {
+    background-image: url("./assets/images/background-pattern-mobile.svg");
+    background-size: cover;
+  }
+
+  .faq-header h1 {
+    font-size: 2.5rem;
+  }
+}
