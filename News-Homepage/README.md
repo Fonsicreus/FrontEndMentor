@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to build a complex grid layout and implement a responsive navigation menu.
+I learned how to create a dropdown menu from the hamburger menu button.
 
 ### AI Collaboration
 
