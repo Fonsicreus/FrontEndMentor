@@ -135,7 +135,6 @@ body {
   letter-spacing: 4px;
   cursor: not-allowed;
   font-size: 0.75rem;
-  transition: 0.3s;
 }
 
 .read-more:hover {
