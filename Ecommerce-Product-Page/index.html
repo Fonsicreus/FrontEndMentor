@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./scripts.js"></script>
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+        padding-top: 20px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="hamburger-logo-container">
+        <button class="hamburger-button">
+          <img src="./images/icon-menu.svg" alt="Hamburger Button" />
+        </button>
+        <img src="./images/logo.svg" alt="Logo" class="logo" />
+
+        <nav class="desktop-menu">
+          <ul>
+            <li><a>Collections</a></li>
+            <li><a>Men</a></li>
+            <li><a>Women</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cart-avatar-container">
+        <button class="cart-button">
+          <img src="./images/icon-cart.svg" alt="Cart" />
+          <span class="cart-badge">0</span>
+        </button>
+
+        <img src="./images/image-avatar.png" alt="Avatar" id="avatar" />
+      </div>
+
+      <section class="cart-container">
+        <h4>Cart</h4>
+        <div class="product-cart-container">
+          <span class="empttext">Your cart is empty</span>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div class="product-visuals">
+        <div class="images-container">
+          <div class="slider">
+            <img src="./images/image-product-1.jpg" alt="Product Image 1" />
+            <img loading="lazy" src="./images/image-product-2.jpg" alt="Product Image 2" />
+            <img loading="lazy" src="./images/image-product-3.jpg" alt="Product Image 3" />
+            <img loading="lazy" src="./images/image-product-4.jpg" alt="Product Image 4" />
+          </div>
+
+          <div class="arrows">
+            <button class="previus-image">
+              <img src="./images/icon-previous.svg" alt="Previus image" />
+            </button>
+            <button class="next-image">
+              <img src="./images/icon-next.svg" alt="Next image" />
+            </button>
+          </div>
+        </div>
+
+        <div class="thumbnails-container">
+          <div class="thumbnail active" data-index="0">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" />
+          </div>
+          <div class="thumbnail" data-index="1">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" />
+          </div>
+          <div class="thumbnail" data-index="2">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" />
+          </div>
+          <div class="thumbnail" data-index="3">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" />
+          </div>
+        </div>
+      </div>
+
+      <div class="product-container">
+        <h3 class="name-company">Sneaker Company</h3>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+          they’ll withstand everything the weather can offer.
+        </p>
+
+        <div class="prices">
+          <div class="price-discount">
+            <div class="price">$125.00</div>
+            <div class="discount">50%</div>
+          </div>
+          <div class="previous-price">$250.00</div>
+        </div>
+
+        <div class="purchase-actions">
+          <div class="select-quantity">
+            <button class="less-quantity">
+              <img src="./images/icon-minus.svg" alt="Less quantity" aria-hidden="true" />
+            </button>
+            <span>0</span>
+            <button class="more-quantity">
+              <img src="./images/icon-plus.svg" alt="More quantity" aria-hidden="true" />
+            </button>
+          </div>
+
+          <button class="add-to-cart">
+            <img src="./images/icon-cart.svg" alt="Cart" aria-hidden="true" />
+            <span>Add to cart</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div class="menu-overlay"></div>
+    <nav class="side-menu">
+      <button class="close-menu">
+        <img loading="lazy" src="./images/icon-close.svg" alt="Close menu" />
+      </button>
+      <ul>
+        <li><a>Collections</a></li>
+        <li><a>Men</a></li>
+        <li><a>Women</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by
+      <a href="https://github.com/Fonsicreus">Satella</a>.
+    </footer>
+  </body>
+</html>

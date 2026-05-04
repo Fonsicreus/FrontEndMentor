@@ -22,6 +22,7 @@ export default defineConfig({
         "faq-accordion": resolve(__dirname, "Faq-accordion/index.html"),
         "contact-form": resolve(__dirname, "Contact-Form/index.html"),
         "news-homepage": resolve(__dirname, "News-Homepage/index.html"),
+        "ecommerce-product-page": resolve(__dirname, "Ecommerce-Product-Page/index.html"),
       },
     },
   },
