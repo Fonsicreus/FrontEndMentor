@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-blue-950 font-outfit text-blue-500 min-h-screen flex flex-col items-center justify-center">
+    <main class="w-80 bg-blue-900 p-5 rounded-2xl shadow-xl/40 relative">
+      <div class="relative group cursor-pointer">
+        <img src="./images/image-equilibrium.jpg" alt="Equilibrium" class="rounded-[8px]" />
+        <div
+          class="absolute inset-0 bg-cyan-400/50 flex items-center justify-center rounded-[8px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <img src="./images/icon-view.svg" alt="View Icon" />
+        </div>
+      </div>
+      <h1 class="text-white pt-5 hover:text-cyan-400 hover:cursor-pointer">Equilibrium #3429</h1>
+      <p class="pt-4">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="pt-4 pb-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <img src="./images/icon-ethereum.svg" alt="Etherum" />
+          <span class="text-cyan-400 font-bold">0.041 ETH</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="./images/icon-clock.svg" alt="Clock Image" />
+          <span>3 days left</span>
+        </div>
+      </div>
+      <div class="pt-4 pb-2 flex items-center gap-4 border-t border-blue-800">
+        <img
+          src="./images/image-avatar.png"
+          alt="Avatar of Jules Wyvern"
+          class="w-8 h-8 border border-white rounded-full"
+        />
+        <span class="text-sm"
+          >Creation of <span class="text-white hover:text-cyan-400 cursor-pointer">Jules Wyvern</span></span
+        >
+      </div>
+    </main>
+
+    <footer class="attribution absolute bottom-10 w-full text-center text-sm">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by
+      <a href="https://github.com/Fonsicreus">Satella</a>.
+    </footer>
+  </body>
+</html>
