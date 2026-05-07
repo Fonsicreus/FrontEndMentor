@@ -26,13 +26,34 @@ const cartBadge = document.querySelector(".cart-badge");
 const cart = document.querySelector(".cart-container");
 const productCart = document.querySelector(".product-cart-container");
 
-const thumbnails = document.querySelectorAll(".thumbnail");
+const productThumbnails = document.querySelectorAll(".product-visuals .thumbnail");
+const lightboxOverlay = document.querySelector(".lightbox-overlay");
+const lightboxSlider = document.querySelector(".lightbox-slider");
+const closeLightboxBtn = document.querySelector(".close-lightbox");
+const lightboxPrev = document.querySelector(".lightbox-prev");
+const lightboxNext = document.querySelector(".lightbox-next");
+const lightboxThumbnails = document.querySelectorAll(".lightbox-thumbnails .thumbnail");
+const mainImageContainer = document.querySelector(".images-container");
+
+let lightboxImageIndex = 0;
 
 function updateSlider() {
   slider.style.transform = `translateX(-${currentImageIndex * 100}%)`;
 
-  thumbnails.forEach((thumb, i) => {
+  productThumbnails.forEach((thumb, i) => {
     if (i === currentImageIndex) {
+      thumb.classList.add("active");
+    } else {
+      thumb.classList.remove("active");
+    }
+  });
+}
+
+function updateLightboxSlider() {
+  lightboxSlider.style.transform = `translateX(-${lightboxImageIndex * 100}%)`;
+
+  lightboxThumbnails.forEach((thumb, i) => {
+    if (i === lightboxImageIndex) {
       thumb.classList.add("active");
     } else {
       thumb.classList.remove("active");
@@ -56,10 +77,51 @@ nextBtn.addEventListener("click", () => {
   updateSlider();
 });
 
-thumbnails.forEach((thumbnail) => {
+productThumbnails.forEach((thumbnail) => {
   thumbnail.addEventListener("click", () => {
     currentImageIndex = parseInt(thumbnail.dataset.index);
     updateSlider();
+  });
+});
+
+mainImageContainer.addEventListener("click", () => {
+  if (window.innerWidth >= 1000) {
+    lightboxImageIndex = currentImageIndex;
+    updateLightboxSlider();
+    lightboxOverlay.classList.add("is-open");
+  }
+});
+
+closeLightboxBtn.addEventListener("click", () => {
+  lightboxOverlay.classList.remove("is-open");
+});
+
+lightboxOverlay.addEventListener("click", (e) => {
+  if (e.target === lightboxOverlay) {
+    lightboxOverlay.classList.remove("is-open");
+  }
+});
+
+lightboxPrev.addEventListener("click", () => {
+  lightboxImageIndex--;
+  if (lightboxImageIndex < 0) {
+    lightboxImageIndex = images.length - 1;
+  }
+  updateLightboxSlider();
+});
+
+lightboxNext.addEventListener("click", () => {
+  lightboxImageIndex++;
+  if (lightboxImageIndex >= images.length) {
+    lightboxImageIndex = 0;
+  }
+  updateLightboxSlider();
+});
+
+lightboxThumbnails.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", () => {
+    lightboxImageIndex = parseInt(thumbnail.dataset.index);
+    updateLightboxSlider();
   });
 });
 
