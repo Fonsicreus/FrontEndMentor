@@ -28,6 +28,7 @@ export default defineConfig({
         "news-homepage": resolve(__dirname, "News-Homepage/index.html"),
         "ecommerce-product-page": resolve(__dirname, "Ecommerce-Product-Page/index.html"),
         "nft-preview-card": resolve(__dirname, "Nft-Preview-Card-Component/index.html"),
+        loopstudios: resolve(__dirname, "Loopstudios-Landing-Page/index.html"),
       },
     },
   },

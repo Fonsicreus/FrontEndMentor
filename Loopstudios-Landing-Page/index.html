@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./scripts.js"></script>
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="font-josefin w-screen flex flex-col items-center overflow-x-hidden">
+    <header
+      class="bg-desktop-hero bg-black/40 bg-blend-multiply px-36 py-15 w-full bg-cover text-grey-200 flex flex-col items-center max-xl:px-10 max-xl:pb-40"
+    >
+      <section class="flex justify-between w-full max-w-[1175px] items-center">
+        <a><img src="./images/logo.svg" alt="Logo" /></a>
+        <button id="hamburger-menu" class="hidden max-xl:block cursor-pointer z-50">
+          <img src="./images/icon-hamburger.svg" alt="Menu" />
+        </button>
+        <nav class="flex gap-8 max-xl:hidden">
+          <a class="border-b-2 border-transparent hover:border-white transition cursor-pointer">About</a>
+          <a class="border-b-2 border-transparent hover:border-white transition cursor-pointer">Careers</a>
+          <a class="border-b-2 border-transparent hover:border-white transition cursor-pointer">Events</a>
+          <a class="border-b-2 border-transparent hover:border-white transition cursor-pointer">Products</a>
+          <a class="border-b-2 border-transparent hover:border-white transition cursor-pointer">Support</a>
+        </nav>
+      </section>
+      <h1
+        class="border-2 border-white p-10 max-sm:p-6 mt-30 mb-12 w-[700px] text-7xl max-sm:text-2xl uppercase tracking-widest leading-tight self-start 2xl:ml-50 transition-all duration-500 max-xl:w-11/12"
+      >
+        Immersive experiences that deliver
+      </h1>
+    </header>
+
+    <main class="w-full max-w-[1175px] max-xl:w-11/12">
+      <section
+        class="bg-desktop-interactive mt-36 bg-no-repeat bg-contain w-full h-[500px] flex justify-end items-end max-xl:bg-none max-xl:h-auto max-xl:flex-col max-xl:items-center"
+      >
+        <img src="./images/mobile/image-interactive.jpg" alt="Interactive VR" class="hidden max-xl:block w-full mb-8" />
+        <div class="w-[60%] bg-white pl-24 pt-24 pb-4 max-xl:w-full max-xl:p-0 max-xl:text-center">
+          <h3 class="text-5xl uppercase pb-8 font-josefin">The leader in interactive VR</h3>
+          <p class="text-dark-grayish-blue leading-relaxed font-alata max-xl:text-justify max-xl:px-4">
+            Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best
+            companies around the globe. Our award-winning creations have transformed businesses through digital
+            experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+
+      <section class="py-36 max-xl:pt-24 max-xl:pb-10">
+        <div class="flex justify-between uppercase mb-20 max-xl:justify-center">
+          <span class="text-4xl max-xl:text-center">Our creations</span>
+          <a
+            class="bg-black px-10 py-2 text-white border border-black hover:bg-white hover:text-black transition-all tracking-widest uppercase cursor-pointer font-alata max-xl:hidden"
+          >
+            See all
+          </a>
+        </div>
+
+        <div class="grid grid-cols-4 gap-8 w-full h-[850px] uppercase max-xl:grid-cols-1 max-xl:h-auto">
+          <a
+            class="creation-card bg-desktop-deep-earth max-xl:bg-mobile-deep-earth max-xl:h-[150px] max-xl:pb-4 max-xl:pl-5"
+          >
+            Deep<br />Earth
+          </a>
+          <a
+            class="creation-card bg-desktop-night-arcade max-xl:bg-mobile-night-arcade max-xl:h-[150px] max-xl:pb-4 max-xl:pl-5"
+          >
+            Night<br />Arcade
+          </a>
+          <a
+            class="creation-card bg-desktop-soccer-team max-xl:bg-mobile-soccer-team max-xl:h-[150px] max-xl:pb-4 max-xl:pl-5"
+          >
+            Soccer<br />Team VR
+          </a>
+          <a class="creation-card bg-desktop-grid max-xl:bg-mobile-grid max-xl:h-[150px] max-xl:pb-4 max-xl:pl-5">
+            The<br />Grid
+          </a>
+          <a
+            class="creation-card bg-desktop-from-above max-xl:bg-mobile-from-above max-xl:h-[150px] max-xl:pb-4 max-xl:pl-5"
+          >
+            From Up<br />Above VR
+          </a>
+          <a
+            class="creation-card bg-desktop-pocket-borealis max-xl:bg-mobile-pocket-borealis max-xl:h-[150px] max-xl:pb-4 max-xl:pl-5"
+          >
+            Pocket<br />Borealis
+          </a>
+          <a
+            class="creation-card bg-desktop-curiosity max-xl:bg-mobile-curiosity max-xl:h-[150px] max-xl:pb-4 max-xl:pl-5"
+          >
+            The<br />Curiosity
+          </a>
+          <a class="creation-card bg-desktop-fisheye max-xl:bg-mobile-fisheye max-xl:h-[150px] max-xl:pb-4 max-xl:pl-5">
+            Make it<br />Fisheye
+          </a>
+        </div>
+
+        <div class="hidden max-xl:flex justify-center mt-10">
+          <a
+            class="bg-white px-10 py-3 text-black border-2 border-black hover:bg-black hover:text-white transition-all tracking-widest uppercase cursor-pointer font-alata"
+          >
+            See all
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black text-white px-36 py-12 flex flex-col gap-8 w-full items-center max-xl:px-10">
+      <div
+        class="flex justify-between items-start w-full max-w-[1175px] max-xl:flex-col max-xl:items-center max-xl:gap-12"
+      >
+        <div class="flex flex-col gap-8 max-xl:items-center">
+          <img src="./images/logo.svg" alt="Logo" class="w-36" />
+          <nav class="flex gap-8 max-xl:flex-col max-xl:items-center max-xl:gap-6">
+            <a class="border-b-2 border-transparent hover:border-white transition cursor-pointer">About</a>
+            <a class="border-b-2 border-transparent hover:border-white transition cursor-pointer">Careers</a>
+            <a class="border-b-2 border-transparent hover:border-white transition cursor-pointer">Events</a>
+            <a class="border-b-2 border-transparent hover:border-white transition cursor-pointer">Products</a>
+            <a class="border-b-2 border-transparent hover:border-white transition cursor-pointer">Support</a>
+          </nav>
+        </div>
+        <div class="flex flex-col items-end gap-6 text-grey-200 max-xl:items-center">
+          <div class="flex gap-4">
+            <a>
+              <img
+                src="./images/icon-facebook.svg"
+                alt="Facebook"
+                class="cursor-pointer border-b-2 border-transparent hover:border-white pb-2 transition"
+              />
+            </a>
+            <a>
+              <img
+                src="./images/icon-twitter.svg"
+                alt="Twitter"
+                class="cursor-pointer border-b-2 border-transparent hover:border-white pb-2 transition"
+              />
+            </a>
+            <a>
+              <img
+                src="./images/icon-pinterest.svg"
+                alt="Pinterest"
+                class="cursor-pointer border-b-2 border-transparent hover:border-white pb-2 transition"
+              />
+            </a>
+            <a>
+              <img
+                src="./images/icon-instagram.svg"
+                alt="Instagram"
+                class="cursor-pointer border-b-2 border-transparent hover:border-white pb-2 transition"
+              />
+            </a>
+          </div>
+          <span class="max-xl:w-[90%] text-center">© 2021 Loopstudios. All rights reserved.</span>
+        </div>
+      </div>
+
+      <div class="attribution text-2xl w-[90%] max-w-[1175px] text-center" style="padding-top: 40px; color: salmon">
+        Challenge by
+        <a style="color: aquamarine" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by
+        <a style="color: aquamarine" href="https://github.com/Fonsicreus">Satella</a>.
+      </div>
+    </footer>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-black z-100 hidden flex-col px-10 py-15 max-xl:hidden">
+      <div class="flex justify-between items-center w-full">
+        <a><img src="./images/logo.svg" alt="Logo" /></a>
+        <button id="close-menu" class="cursor-pointer">
+          <img src="./images/icon-close.svg" alt="Close Menu" />
+        </button>
+      </div>
+      <nav class="flex flex-col gap-6 mt-32 text-2xl uppercase font-josefin text-white">
+        <a class="hover:text-gray-400 cursor-pointer">About</a>
+        <a class="hover:text-gray-400 cursor-pointer">Careers</a>
+        <a class="hover:text-gray-400 cursor-pointer">Events</a>
+        <a class="hover:text-gray-400 cursor-pointer">Products</a>
+        <a class="hover:text-gray-400 cursor-pointer">Support</a>
+      </nav>
+    </div>
+  </body>
+</html>

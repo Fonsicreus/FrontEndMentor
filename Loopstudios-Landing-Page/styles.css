@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-grey-200: hsl(0, 0%, 85%);
+  --color-dark-grayish-blue: hsl(0, 0%, 41%);
+  --color-very-dark-grey: hsl(0, 0%, 55%);
+  --color-primary-white: hsl(0, 0%, 100%);
+  --color-primary-black: hsl(0, 0%, 0%);
+
+  --font-alata: "Alata", sans-serif;
+  --font-josefin: "Josefin Sans", sans-serif;
+}
+
+@layer components {
+  .creation-card {
+    @apply bg-cover bg-center bg-black/40 bg-blend-color text-grey-200 flex items-end pl-8 pb-8 hover:bg-white/75 hover:text-black transition-all text-left text-3xl cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .bg-desktop-hero {
+    background-image: url("./images/desktop/image-hero.jpg");
+  }
+  .bg-desktop-interactive {
+    background-image: url("./images/desktop/image-interactive.jpg");
+  }
+
+  .bg-desktop-deep-earth {
+    background-image: url("./images/desktop/image-deep-earth.jpg");
+  }
+  .bg-mobile-deep-earth {
+    background-image: url("./images/mobile/image-deep-earth.jpg");
+  }
+
+  .bg-desktop-night-arcade {
+    background-image: url("./images/desktop/image-night-arcade.jpg");
+  }
+  .bg-mobile-night-arcade {
+    background-image: url("./images/mobile/image-night-arcade.jpg");
+  }
+
+  .bg-desktop-soccer-team {
+    background-image: url("./images/desktop/image-soccer-team.jpg");
+  }
+  .bg-mobile-soccer-team {
+    background-image: url("./images/mobile/image-soccer-team.jpg");
+  }
+
+  .bg-desktop-grid {
+    background-image: url("./images/desktop/image-grid.jpg");
+  }
+  .bg-mobile-grid {
+    background-image: url("./images/mobile/image-grid.jpg");
+  }
+
+  .bg-desktop-from-above {
+    background-image: url("./images/desktop/image-from-above.jpg");
+  }
+  .bg-mobile-from-above {
+    background-image: url("./images/mobile/image-from-above.jpg");
+  }
+
+  .bg-desktop-pocket-borealis {
+    background-image: url("./images/desktop/image-pocket-borealis.jpg");
+  }
+  .bg-mobile-pocket-borealis {
+    background-image: url("./images/mobile/image-pocket-borealis.jpg");
+  }
+
+  .bg-desktop-curiosity {
+    background-image: url("./images/desktop/image-curiosity.jpg");
+  }
+  .bg-mobile-curiosity {
+    background-image: url("./images/mobile/image-curiosity.jpg");
+  }
+
+  .bg-desktop-fisheye {
+    background-image: url("./images/desktop/image-fisheye.jpg");
+  }
+  .bg-mobile-fisheye {
+    background-image: url("./images/mobile/image-fisheye.jpg");
+  }
+}
