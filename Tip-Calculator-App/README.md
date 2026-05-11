@@ -13,6 +13,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
+      - [Testing Challenge Update](#testing-challenge-update)
     - [AI Collaboration](#ai-collaboration)
   - [Author](#author)
 
@@ -43,10 +44,15 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Desktop-first workflow
+- Vitest (Testing Challenge Update)
 
 ### What I learned
 
 I’ve learned how to interact with text and numbers in order to perform calculations and create more advanced prompts.
+
+#### Testing Challenge Update
+
+I’ve learned how to use Vitest to test my code.
 
 ### AI Collaboration
 

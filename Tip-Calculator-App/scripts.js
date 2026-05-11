@@ -1,3 +1,5 @@
+import { calculateTip } from "./tip.js";
+
 const bill = document.getElementById("bill");
 const people = document.getElementById("people");
 const customBtn = document.getElementById("customBtn");
@@ -12,12 +14,11 @@ function calculate() {
   const billVal = parseFloat(bill.value);
   const peopleVal = parseInt(people.value);
 
-  if (billVal > 0 && peopleVal > 0) {
-    const tipPerPerson = (billVal * (tip / 100)) / peopleVal;
-    const totalPerPerson = billVal / peopleVal + tipPerPerson;
+  const result = calculateTip(billVal, peopleVal, tip);
 
-    tipAmount.textContent = "$" + tipPerPerson.toFixed(2);
-    total.textContent = "$" + totalPerPerson.toFixed(2);
+  if (result) {
+    tipAmount.textContent = "$" + result.tipPerPerson.toFixed(2);
+    total.textContent = "$" + result.totalPerPerson.toFixed(2);
   } else {
     tipAmount.textContent = "$0.00";
     total.textContent = "$0.00";
