@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-grey-500: hsl(0, 0%, 63%);
+  --color-grey-800: hsl(0, 0%, 27%);
+  --color-primary-white: hsl(0, 100%, 100%);
+  --color-primary-black: hsl(0, 0%, 0%);
+
+  --font-league: "League Spartan", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-league text-[16px] overflow-x-hidden text-grey-800;
+  }
+
+  h1 {
+    @apply text-primary-black font-bold;
+  }
+
+  p {
+    @apply text-grey-500 font-medium;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative transition-all duration-300;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 -translate-x-1/2;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}
+@layer utilities {
+  .hero-1 {
+    background-image: url("./images/desktop-image-hero-1.jpg");
+  }
+  .hero-2 {
+    background-image: url("./images/desktop-image-hero-2.jpg");
+  }
+  .hero-3 {
+    background-image: url("./images/desktop-image-hero-3.jpg");
+  }
+}

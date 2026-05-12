@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./scripts.js"></script>
+
+    <title>Frontend Mentor | Room homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="min-w-screen flex justify-center bg-gray-100">
+    <main class="w-full bg-white flex flex-col shadow-2xl">
+      <section class="flex flex-col xl:flex-row w-full h-auto xl:h-[65vh]">
+        <div
+          id="hero-image"
+          class="w-full xl:w-3/5 hero-1 bg-cover bg-center relative min-h-[400px] xl:min-h-0 transition-all duration-500"
+        >
+          <nav class="flex items-center justify-center xl:justify-start gap-12 text-white p-12 lg:px-16 xl:py-16">
+            <button id="menu-open" class="xl:hidden cursor-pointer absolute left-8 top-12">
+              <img src="./images/icon-hamburger.svg" alt="Open Menu" />
+            </button>
+            <img src="./images/logo.svg" alt="Room Logo" class="xl:mr-12" />
+            <div class="hidden xl:flex gap-8 lowercase font-semibold tracking-widest">
+              <a class="nav-link cursor-pointer">home</a>
+              <a class="nav-link cursor-pointer">shop</a>
+              <a class="nav-link cursor-pointer">about</a>
+              <a class="nav-link cursor-pointer">contact</a>
+            </div>
+          </nav>
+
+          <!-- Mobile Menu Overlay -->
+          <div
+            id="mobile-menu"
+            class="fixed top-0 left-0 w-full bg-white p-12 flex items-center gap-8 z-50 transition-all duration-300 -translate-y-full opacity-0 pointer-events-none"
+          >
+            <button id="menu-close" class="cursor-pointer">
+              <img src="./images/icon-close.svg" alt="Close Menu" />
+            </button>
+            <div
+              class="flex flex-1 justify-end items-center max-[450px]:flex-col max-[450px]:items-end gap-6 md:gap-10 lowercase font-bold text-black tracking-widest"
+            >
+              <a href="#" class="hover:border-b-2 border-black pb-1">home</a>
+              <a href="#" class="hover:border-b-2 border-black pb-1">shop</a>
+              <a href="#" class="hover:border-b-2 border-black pb-1">about</a>
+              <a href="#" class="hover:border-b-2 border-black pb-1">contact</a>
+            </div>
+          </div>
+
+          <!-- Overlay Backdrop -->
+          <div
+            id="menu-backdrop"
+            class="fixed inset-0 bg-black/50 z-40 opacity-0 pointer-events-none transition-opacity duration-300"
+          ></div>
+
+          <div class="absolute bottom-0 right-0 flex translate-x-full max-xl:translate-x-0">
+            <button id="prev-btn" class="bg-black p-6 w-20 hover:bg-grey-800 transition-colors cursor-pointer group">
+              <img src="./images/icon-angle-left.svg" alt="Previous" class="w-4 lg:w-6" />
+            </button>
+            <button id="next-btn" class="bg-black p-6 w-20 hover:bg-grey-800 transition-colors cursor-pointer group">
+              <img src="./images/icon-angle-right.svg" alt="Next" class="w-4 lg:w-6" />
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="w-full xl:w-2/5 flex flex-col justify-center items-center xl:items-start text-center xl:text-left p-8 lg:p-12 xl:p-20"
+        >
+          <h1 id="hero-title" class="text-3xl lg:text-5xl font-bold leading-tight mb-6">
+            Discover innovative ways to decorate
+          </h1>
+          <p id="hero-text" class="mb-8 leading-relaxed text-sm lg:text-base">
+            We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine
+            form and function in bringing your vision to life. Create a room in your own style with our collection and
+            make your property a reflection of you and what you love.
+          </p>
+          <button
+            class="flex items-center gap-6 tracking-[0.7em] uppercase font-bold text-sm hover:text-grey-500 transition-colors w-max cursor-pointer"
+          >
+            Shop now
+            <img src="./images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <section class="flex flex-col xl:flex-row w-full h-auto xl:h-[35vh]">
+        <div class="w-full xl:w-[30%] h-64 xl:h-full">
+          <img src="./images/image-about-dark.jpg" alt="About Dark" class="w-full h-full object-cover" />
+        </div>
+        <div
+          class="w-full xl:w-[40%] flex flex-col justify-center items-center xl:items-start text-center xl:text-left p-12 lg:p-16"
+        >
+          <h2 class="uppercase font-bold text-xl tracking-widest mb-4 text-black">About our furniture</h2>
+          <p class="leading-relaxed text-[15px]">
+            Our multifunctional collection blends design and function to suit your individual taste. Make each room
+            unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture
+            pieces you need, from traditional to contemporary styles or anything in between. Product specialists are
+            available to help you create your dream space.
+          </p>
+
+          <div class="mt-8 hidden xl:block">
+            <footer class="attribution" style="color: salmon">
+              Challenge by
+              <a style="color: aquamarine" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded
+              by <a style="color: aquamarine" href="https://github.com/Fonsicreus">Satella</a>.
+            </footer>
+          </div>
+        </div>
+        <div class="w-full xl:w-[30%] h-64 xl:h-full">
+          <img src="./images/image-about-light.jpg" alt="About Light" class="w-full h-full object-cover" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
