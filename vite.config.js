@@ -30,6 +30,7 @@ export default defineConfig({
         "nft-preview-card": resolve(__dirname, "Nft-Preview-Card-Component/index.html"),
         "loopstudios": resolve(__dirname, "Loopstudios-Landing-Page/index.html"),
         "room-homepage": resolve(__dirname, "Room-homepage/index.html"),
+        "bookmark-landing-page": resolve(__dirname, "Bookmark-Landing-Page-Master/index.html"),
       },
     },
   },

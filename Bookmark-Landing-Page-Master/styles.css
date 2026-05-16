@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-blue-600: hsl(231, 69%, 60%);
+  --color-red-400: hsl(0, 94%, 66%);
+  --color-grey-50: hsl(0, 0%, 97%);
+  --color-grey-200: hsl(229, 8%, 85%);
+  --color-grey-500: hsl(229, 8%, 60%);
+  --color-blue-950: hsl(229, 31%, 21%);
+
+  --font-rubik: "Rubik", sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
