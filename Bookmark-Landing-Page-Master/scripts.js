@@ -1,3 +1,7 @@
+import imgTab1 from "./images/illustration-features-tab-1.svg";
+import imgTab2 from "./images/illustration-features-tab-2.svg";
+import imgTab3 from "./images/illustration-features-tab-3.svg";
+
 const FILTER_ORANGE = "invert(53%) sepia(85%) saturate(1634%) hue-rotate(346deg) brightness(101%) contrast(101%)";
 
 function initTabs() {
@@ -9,19 +13,19 @@ function initTabs() {
       id: "1",
       title: "Bookmark in one click",
       desc: "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
-      img: "./images/illustration-features-tab-1.svg",
+      img: imgTab1,
     },
     {
       id: "2",
       title: "Intelligent search",
       desc: "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
-      img: "./images/illustration-features-tab-2.svg",
+      img: imgTab2,
     },
     {
       id: "3",
       title: "Share your bookmarks",
       desc: "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
-      img: "./images/illustration-features-tab-3.svg",
+      img: imgTab3,
     },
   ];
 
@@ -229,21 +233,27 @@ function initMobileMenu() {
   const menuToggle = document.getElementById("menu-toggle");
   const menuClose = document.getElementById("menu-close");
   const mobileMenu = document.getElementById("mobile-menu");
+  const headerLogo = document.querySelector("header .logo");
 
   if (!menuToggle || !menuClose || !mobileMenu) return;
 
-  menuToggle.addEventListener("click", () => {
+  const openMenu = () => {
     mobileMenu.classList.remove("translate-x-full");
-  });
+    if (headerLogo) headerLogo.classList.add("opacity-0", "pointer-events-none");
+    menuToggle.classList.add("opacity-0", "pointer-events-none");
+  };
 
-  menuClose.addEventListener("click", () => {
+  const closeMenu = () => {
     mobileMenu.classList.add("translate-x-full");
-  });
+    if (headerLogo) headerLogo.classList.remove("opacity-0", "pointer-events-none");
+    menuToggle.classList.remove("opacity-0", "pointer-events-none");
+  };
 
-  mobileMenu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      mobileMenu.classList.add("translate-x-full");
-    });
+  menuToggle.addEventListener("click", openMenu);
+  menuClose.addEventListener("click", closeMenu);
+
+  mobileMenu.querySelectorAll("a, button").forEach((element) => {
+    element.addEventListener("click", closeMenu);
   });
 }
 
