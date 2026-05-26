@@ -1,9 +1,10 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  plugins: [tailwindcss()],
+  plugins: [tailwindcss(), react()],
 
   base: "./",
 
@@ -28,7 +29,7 @@ export default defineConfig({
         "news-homepage": resolve(__dirname, "News-Homepage/index.html"),
         "ecommerce-product-page": resolve(__dirname, "Ecommerce-Product-Page/index.html"),
         "nft-preview-card": resolve(__dirname, "Nft-Preview-Card-Component/index.html"),
-        loopstudios: resolve(__dirname, "Loopstudios-Landing-Page/index.html"),
+        "loopstudios-landing-page": resolve(__dirname, "Loopstudios-Landing-Page/index.html"),
         "room-homepage": resolve(__dirname, "Room-homepage/index.html"),
         "bookmark-landing-page": resolve(__dirname, "Bookmark-Landing-Page-Master/index.html"),
         "space-tourism": resolve(__dirname, "Space-Tourism-Website/index.html"),

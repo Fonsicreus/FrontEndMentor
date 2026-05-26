@@ -5,10 +5,15 @@
   "scripts": {
     "dev": "vite",
     "test": "vitest",
+    "doctor": "react-doctor",
     "build": "vite build",
-    "preview": "vite build && vite preview"
+    "preview": "react-doctor && vite build && vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "react": "^19.2.6",
+    "react-doctor": "^0.2.8",
+    "react-dom": "^19.2.6",
     "vite": "^8.0.1"
   },
   "devDependencies": {
