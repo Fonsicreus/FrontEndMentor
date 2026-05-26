@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./scripts.js"></script>
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="min-h-screen overflow-x-hidden overflow-y-auto lg:overflow-hidden font-barlow-condensed">
+    <main id="main-container" class="w-full min-h-screen bg-home bg-cover bg-no-repeat flex flex-col justify-between pb-8 lg:pb-0">
+      <!-- Header Section -->
+      <header class="flex justify-between items-center px-6 md:px-12 pt-6 md:pt-10 lg:pt-12 h-24 md:h-36 relative">
+        <img src="./assets/shared/logo.svg" alt="logo" class="h-10 md:h-12 w-auto self-center relative z-50" />
+        <!-- Top decorative line - hidden on mobile and tablet, shown on desktop -->
+        <div class="border border-gray-700 absolute top-[95px] left-44 w-xl z-50 hidden 2xl:block"></div>
+
+        <!-- Hamburger Menu Toggle Button for Mobile -->
+        <button id="menu-toggle" class="md:hidden z-50 p-2 focus:outline-none hover:cursor-pointer">
+          <img id="menu-icon" src="./assets/shared/icon-hamburger.svg" alt="menu" class="w-6 h-[21px]" />
+        </button>
+
+        <!-- Navbar Navigation - drawer on mobile, inline row on tablet/desktop -->
+        <nav
+          id="navbar"
+          class="fixed top-0 right-0 h-screen w-[254px] bg-white/25 backdrop-blur-xl z-40 flex flex-col pt-32 pl-8 gap-8 text-black tracking-widest text-lg transform translate-x-full transition-transform duration-300 md:static md:h-24 md:w-auto md:bg-white/25 md:backdrop-blur-md md:flex-row md:translate-x-0 md:justify-around md:pl-10 md:pr-10 md:pt-0 md:items-center lg:w-[830px] lg:h-24"
+        >
+          <button class="uppercase hover:cursor-pointer hover:border-b-4 h-full flex items-center gap-4 md:gap-0 py-2 md:py-0" id="button-home">
+            <span class="font-bold md:hidden lg:inline mr-2">00</span> Home
+          </button>
+          <button
+            class="uppercase hover:cursor-pointer hover:border-b-4 h-full flex items-center gap-4 md:gap-0 py-2 md:py-0"
+            id="button-destination"
+          >
+            <span class="font-bold md:hidden lg:inline mr-2">01</span> Destination
+          </button>
+          <button class="uppercase hover:cursor-pointer hover:border-b-4 h-full flex items-center gap-4 md:gap-0 py-2 md:py-0" id="button-crew">
+            <span class="font-bold md:hidden lg:inline mr-2">02</span> Crew
+          </button>
+          <button
+            class="uppercase hover:cursor-pointer hover:border-b-4 h-full flex items-center gap-4 md:gap-0 py-2 md:py-0"
+            id="button-techonology"
+          >
+            <span class="font-bold md:hidden lg:inline mr-2">03</span> Technology
+          </button>
+        </nav>
+      </header>
+
+      <!-- Home Section -->
+      <section
+        class="w-full flex flex-col lg:flex-row items-center justify-between pt-12 md:pt-24 lg:pt-40 px-6 md:px-24 lg:px-44 gap-12 lg:gap-8"
+        id="home"
+      >
+        <div class="w-full lg:w-1/2 text-white flex flex-col items-center lg:items-start text-center lg:text-left">
+          <span class="tracking-widest text-base md:text-xl lg:text-3xl text-gray-300 uppercase font-barlow-condensed"
+            >So, you want to travel to</span
+          >
+          <span class="text-7xl md:text-[120px] lg:text-[140px] xl:text-[160px] tracking-wider uppercase font-bellefair my-4 lg:my-0 leading-none"
+            >Space</span
+          >
+          <span class="text-sm md:text-base lg:text-[20px] text-gray-300 max-w-[450px] leading-relaxed">
+            Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit
+            back, and relax because we'll give you a truly out of this world experience!
+          </span>
+        </div>
+        <div class="w-full lg:w-1/2 uppercase flex justify-center items-center mt-8 lg:mt-0">
+          <div
+            class="bg-white text-space-dark text-xl md:text-3xl rounded-full size-36 md:size-60 lg:size-80 flex justify-center items-center hover:cursor-pointer hover:shadow-[0_0_0_50px_rgba(255,255,255,0.1)] transition-all duration-300 font-bellefair"
+            id="explore"
+          >
+            Explore
+          </div>
+        </div>
+      </section>
+
+      <!-- Destination Section -->
+      <section class="w-full flex flex-col pt-12 md:pt-24 px-6 md:px-24 lg:px-44 text-white hidden" id="destination">
+        <h2
+          class="text-base md:text-xl lg:text-3xl tracking-widest uppercase font-barlow-condensed mb-8 md:mb-16 flex justify-center lg:justify-start gap-4"
+        >
+          <span class="text-gray-500 font-bold">01</span> Pick your destination
+        </h2>
+
+        <div class="w-full flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16">
+          <div class="w-full lg:w-1/2 flex justify-center items-center">
+            <img
+              src="./assets/destination/image-moon.png"
+              alt="Moon"
+              id="destination-image"
+              class="w-40 h-40 md:w-72 md:h-72 lg:w-[400px] lg:h-[400px]"
+            />
+          </div>
+
+          <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left pr-0 lg:pr-12">
+            <div class="flex flex-col items-center lg:items-start">
+              <div class="flex gap-6 md:gap-8 text-sm md:text-lg tracking-widest font-barlow-condensed mb-6 md:mb-8 justify-center lg:justify-start">
+                <button class="text-white border-b-2 border-white pb-2 hover:cursor-pointer uppercase">Moon</button>
+                <button class="text-gray-400 hover:text-white hover:border-b-2 hover:border-white/50 pb-2 hover:cursor-pointer uppercase">
+                  Mars
+                </button>
+                <button class="text-gray-400 hover:text-white hover:border-b-2 hover:border-white/50 pb-2 hover:cursor-pointer uppercase">
+                  Europa
+                </button>
+                <button class="text-gray-400 hover:text-white hover:border-b-2 hover:border-white/50 pb-2 hover:cursor-pointer uppercase">
+                  Titan
+                </button>
+              </div>
+
+              <h1 id="destination-name" class="text-5xl md:text-7xl lg:text-[100px] uppercase font-bellefair leading-tight mb-2 md:mb-4">
+                destination-name
+              </h1>
+
+              <p id="destination-description" class="text-gray-300 font-barlow text-sm md:text-lg leading-relaxed mb-6 md:mb-8 max-w-[440px]">
+                destination-description
+              </p>
+
+              <hr class="border-gray-700 w-full mb-6 md:mb-8" />
+
+              <div class="flex flex-col md:flex-row gap-8 md:gap-20 justify-center lg:justify-start w-full">
+                <div class="flex flex-col">
+                  <span class="uppercase text-gray-400 tracking-widest font-barlow-condensed mb-1 text-sm md:text-[20px]">Avg. distance</span>
+                  <span id="destination-distance" class="text-xl md:text-2xl uppercase font-bellefair">destination-distance</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="uppercase text-gray-400 tracking-widest font-barlow-condensed mb-1 text-sm md:text-[20px]">Est. travel time</span>
+                  <span id="destination-travel" class="text-xl md:text-2xl uppercase font-bellefair">destination-travel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Crew Section -->
+      <section class="w-full flex flex-col pt-12 md:pt-24 px-6 md:px-24 lg:px-44 text-white hidden" id="crew">
+        <h2
+          class="text-base md:text-xl lg:text-3xl tracking-widest uppercase font-barlow-condensed mb-8 md:mb-16 flex justify-center lg:justify-start gap-4"
+        >
+          <span class="text-gray-500 font-bold">02</span> Meet your crew
+        </h2>
+
+        <div class="w-full flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16">
+          <!-- Left Column: Info & Dots -->
+          <div
+            class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left justify-center order-2 lg:order-1 pr-0 lg:pr-12"
+          >
+            <span id="crew-role" class="text-lg md:text-2xl lg:text-3xl text-white/50 uppercase font-bellefair mb-2 md:mb-4">crew-role</span>
+            <h1 id="crew-name" class="text-3xl md:text-5xl lg:text-6xl uppercase font-bellefair mb-4 md:mb-6">crew-name</h1>
+            <p id="crew-bio" class="text-gray-300 font-barlow text-sm md:text-lg leading-relaxed mb-6 md:mb-12 max-w-[460px]">crew-bio</p>
+
+            <!-- Dot Indicators -->
+            <div class="flex gap-4 md:gap-6 justify-center lg:justify-start mb-6 lg:mb-0">
+              <button
+                class="w-[12px] h-[12px] md:w-[15px] md:h-[15px] rounded-full bg-white hover:cursor-pointer"
+                aria-label="Crew member 1"
+              ></button>
+              <button
+                class="w-[12px] h-[12px] md:w-[15px] md:h-[15px] rounded-full bg-white/20 hover:bg-white/50 hover:cursor-pointer"
+                aria-label="Crew member 2"
+              ></button>
+              <button
+                class="w-[12px] h-[12px] md:w-[15px] md:h-[15px] rounded-full bg-white/20 hover:bg-white/50 hover:cursor-pointer"
+                aria-label="Crew member 3"
+              ></button>
+              <button
+                class="w-[12px] h-[12px] md:w-[15px] md:h-[15px] rounded-full bg-white/20 hover:bg-white/50 hover:cursor-pointer"
+                aria-label="Crew member 4"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Right Column: Image -->
+          <div
+            class="w-full lg:w-1/2 flex justify-center items-end order-1 lg:order-2 border-b border-gray-700 lg:border-none mb-4 lg:mb-0 pb-4 lg:pb-0"
+          >
+            <img
+              src="./assets/crew/image-douglas-hurley.png"
+              alt="Douglas Hurley"
+              id="crew-image"
+              class="h-48 md:h-[350px] lg:h-[500px] w-auto object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Technology Section -->
+      <section class="w-full flex flex-col pt-12 md:pt-24 text-white hidden" id="technology">
+        <h2
+          class="text-base md:text-xl lg:text-3xl tracking-widest uppercase font-barlow-condensed mb-8 md:mb-16 flex justify-center lg:justify-start gap-4 px-6 md:px-24 lg:pl-44"
+        >
+          <span class="text-gray-500 font-bold">03</span> Space launch 101
+        </h2>
+
+        <div class="w-full flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16">
+          <!-- Left/Middle Column: Indicators & Info -->
+          <div class="w-full lg:w-[60%] flex flex-col lg:flex-row gap-6 md:gap-12 items-center px-6 md:px-24 lg:pl-44 order-2 lg:order-1">
+            <!-- Numbers -->
+            <div class="flex flex-row lg:flex-col gap-4 md:gap-6 justify-center">
+              <button
+                class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border border-white bg-white text-space-dark font-bellefair text-lg md:text-2xl lg:text-3xl hover:cursor-pointer flex justify-center items-center"
+              >
+                1
+              </button>
+              <button
+                class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border border-white/25 text-white font-bellefair text-lg md:text-2xl lg:text-3xl hover:border-white hover:cursor-pointer flex justify-center items-center"
+              >
+                2
+              </button>
+              <button
+                class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border border-white/25 text-white font-bellefair text-lg md:text-2xl lg:text-3xl hover:border-white hover:cursor-pointer flex justify-center items-center"
+              >
+                3
+              </button>
+            </div>
+
+            <!-- Content -->
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+              <span class="uppercase text-gray-400 tracking-widest font-barlow-condensed mb-2 block text-xs md:text-sm">The terminology...</span>
+              <h1 id="technology-name" class="text-3xl md:text-5xl lg:text-6xl uppercase font-bellefair mb-4 md:mb-6">technology-name</h1>
+              <p id="technology-description" class="text-gray-300 font-barlow text-sm md:text-lg leading-relaxed max-w-[470px]">
+                technology-description
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Image -->
+          <div class="w-full lg:w-[40%] flex justify-center lg:justify-end order-1 lg:order-2">
+            <img
+              src="./assets/technology/image-launch-vehicle-portrait.jpg"
+              alt="Launch vehicle"
+              id="technology-image"
+              class="w-full lg:w-[515px] h-44 md:h-80 lg:h-[527px] object-cover lg:object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      <footer class="attribution" style="padding: 20px 0; text-align: center; font-size: 0.8rem; color: #ffffff">
+        Challenge by
+        <a style="color: aquamarine" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by
+        <a style="color: aquamarine" href="https://github.com/Fonsicreus">Satella</a>.
+      </footer>
+    </main>
+  </body>
+</html>
