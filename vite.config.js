@@ -2,9 +2,14 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+import biome from 'vite-plugin-biome';
 
 export default defineConfig({
-  plugins: [tailwindcss(), react()],
+  plugins: [tailwindcss(), react(), biome({
+      mode: 'lint',
+      applyFixes: true,      
+      files: ['**/*.{js,ts,jsx,tsx}'], 
+    })],
 
   base: "./",
 
