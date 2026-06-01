@@ -8,7 +8,12 @@
   },
 
   "files": {
-    "includes": ["**", "!**/dist", "!**/node_modules"]
+    "includes": [
+        "**",
+        "!**/dist",
+        "!**/node_modules",
+        "!**/*.css"
+      ]
   },
 
   "formatter": {
@@ -38,4 +43,5 @@
       }
     }
   }
+
 }

@@ -7,7 +7,7 @@
     "test": "vitest",
     "doctor": "react-doctor",
     "build": "vite build",
-    "preview": "react-doctor && vite build && vite preview"
+    "preview": "react-doctor --verbose && vite build && vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^6.0.2",
@@ -19,7 +19,10 @@
   "devDependencies": {
     "@biomejs/biome": "^2.4.16",
     "@tailwindcss/vite": "^4.2.4",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
     "tailwindcss": "^4.2.4",
+    "typescript": "^6.0.3",
     "vite-plugin-biome": "^1.2.0",
     "vitest": "^4.1.5"
   }

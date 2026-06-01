@@ -2,14 +2,17 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
-import biome from 'vite-plugin-biome';
+import biome from "vite-plugin-biome";
 
 export default defineConfig({
-  plugins: [tailwindcss(), react(), biome({
-      mode: 'lint',
-      applyFixes: true,      
-      files: ['**/*.{js,ts,jsx,tsx}'], 
-    })],
+  plugins: [
+    tailwindcss(),
+    react(),
+    biome({
+      mode: "lint",
+      applyFixes: true,
+    }),
+  ],
 
   base: "./",
 
@@ -38,6 +41,7 @@ export default defineConfig({
         "room-homepage": resolve(__dirname, "Room-homepage/index.html"),
         "bookmark-landing-page": resolve(__dirname, "Bookmark-Landing-Page-Master/index.html"),
         "space-tourism": resolve(__dirname, "Space-Tourism-Website/index.html"),
+        "results-summary-component": resolve(__dirname, "Results-Summary-Component/index.html"),
       },
     },
   },
