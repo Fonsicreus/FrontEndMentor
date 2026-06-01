@@ -79,7 +79,7 @@ nextBtn.addEventListener("click", () => {
 
 productThumbnails.forEach((thumbnail) => {
   thumbnail.addEventListener("click", () => {
-    currentImageIndex = parseInt(thumbnail.dataset.index);
+    currentImageIndex = parseInt(thumbnail.dataset.index, 10);
     updateSlider();
   });
 });
@@ -120,7 +120,7 @@ lightboxNext.addEventListener("click", () => {
 
 lightboxThumbnails.forEach((thumbnail) => {
   thumbnail.addEventListener("click", () => {
-    lightboxImageIndex = parseInt(thumbnail.dataset.index);
+    lightboxImageIndex = parseInt(thumbnail.dataset.index, 10);
     updateLightboxSlider();
   });
 });

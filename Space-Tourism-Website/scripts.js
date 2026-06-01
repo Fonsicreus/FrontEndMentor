@@ -2,23 +2,21 @@
 // Image Asset Imports
 // =========================================================================
 
-// Destination Planet Images
-import spaceData from "./data.json" with { type: "json" };
-import moonPng from "./assets/destination/image-moon.png";
-import marsPng from "./assets/destination/image-mars.png";
-import europaPng from "./assets/destination/image-europa.png";
-import titanPng from "./assets/destination/image-titan.png";
-
+import anoushehAnsariPng from "./assets/crew/image-anousheh-ansari.png";
 // Crew Member Images
 import douglasHurleyPng from "./assets/crew/image-douglas-hurley.png";
 import markShuttleworthPng from "./assets/crew/image-mark-shuttleworth.png";
 import victorGloverPng from "./assets/crew/image-victor-glover.png";
-import anoushehAnsariPng from "./assets/crew/image-anousheh-ansari.png";
-
+import europaPng from "./assets/destination/image-europa.png";
+import marsPng from "./assets/destination/image-mars.png";
+import moonPng from "./assets/destination/image-moon.png";
+import titanPng from "./assets/destination/image-titan.png";
 // Technology Images
 import launchVehiclePortrait from "./assets/technology/image-launch-vehicle-portrait.jpg";
-import spaceportPortrait from "./assets/technology/image-spaceport-portrait.jpg";
 import spaceCapsulePortrait from "./assets/technology/image-space-capsule-portrait.jpg";
+import spaceportPortrait from "./assets/technology/image-spaceport-portrait.jpg";
+// Destination Planet Images
+import spaceData from "./data.json" with { type: "json" };
 
 // Grouped Assets Object for easier runtime selection
 const images = {
@@ -198,7 +196,7 @@ function setupDestinationTabs() {
 
 // Crew Section
 function updateCrew(index) {
-  if (!spaceData || !spaceData.crew[index]) return;
+  if (!spaceData?.crew[index]) return;
 
   const member = spaceData.crew[index];
 
@@ -239,7 +237,7 @@ function setupCrewDots() {
 
 // Technology Section
 function updateTechnology(index) {
-  if (!spaceData || !spaceData.technology[index]) return;
+  if (!spaceData?.technology[index]) return;
 
   const tech = spaceData.technology[index];
 

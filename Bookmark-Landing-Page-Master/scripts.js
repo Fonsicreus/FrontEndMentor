@@ -57,16 +57,7 @@ function initTabs() {
     img.classList.add("relative", "z-10");
 
     const bgShape = document.createElement("div");
-    bgShape.classList.add(
-      "absolute",
-      "-left-96",
-      "top-36",
-      "w-[120%]",
-      "h-[80%]",
-      "bg-blue-600",
-      "rounded-r-full",
-      "z-0",
-    );
+    bgShape.classList.add("absolute", "-left-96", "top-36", "w-[120%]", "h-[80%]", "bg-blue-600", "rounded-r-full", "z-0");
 
     imgContainer.appendChild(img);
     imgContainer.appendChild(bgShape);
@@ -161,8 +152,7 @@ function initAccordion() {
         const a = b.querySelector("img");
         if (s) s.style.color = "";
         if (a) {
-          a.style.transform = "rotate(0deg)";
-          a.style.filter = "";
+          a.style.cssText = "transform: rotate(0deg); filter: none;";
         }
         if (b.nextElementSibling) {
           b.nextElementSibling.style.height = "0";
@@ -173,10 +163,9 @@ function initAccordion() {
         btn.dataset.active = "true";
         if (span) span.style.color = "var(--color-red-400)";
         if (arrow) {
-          arrow.style.transform = "rotate(180deg)";
-          arrow.style.filter = FILTER_ORANGE;
+          arrow.style.cssText = `transform: rotate(180deg); filter: ${FILTER_ORANGE};`;
         }
-        content.style.height = content.scrollHeight + "px";
+        content.style.height = `${content.scrollHeight}px`;
       }
     });
   });

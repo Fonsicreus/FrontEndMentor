@@ -34,7 +34,9 @@ timeFrameSelected.forEach((element) => {
   element.addEventListener("click", () => {
     const timeframe = element.textContent.toLowerCase();
 
-    timeFrameSelected.forEach((btn) => btn.classList.remove("active"));
+    timeFrameSelected.forEach((btn) => {
+      btn.classList.remove("active");
+    });
     element.classList.add("active");
 
     updateDashboard(timeframe);

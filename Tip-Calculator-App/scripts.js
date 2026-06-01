@@ -12,13 +12,13 @@ let tip = 0;
 
 function calculate() {
   const billVal = parseFloat(bill.value);
-  const peopleVal = parseInt(people.value);
+  const peopleVal = parseInt(people.value, 10);
 
   const result = calculateTip(billVal, peopleVal, tip);
 
   if (result) {
-    tipAmount.textContent = "$" + result.tipPerPerson.toFixed(2);
-    total.textContent = "$" + result.totalPerPerson.toFixed(2);
+    tipAmount.textContent = `$${result.tipPerPerson.toFixed(2)}`;
+    total.textContent = `$${result.totalPerPerson.toFixed(2)}`;
   } else {
     tipAmount.textContent = "$0.00";
     total.textContent = "$0.00";
@@ -32,7 +32,9 @@ function calculate() {
 }
 
 function removeActiveClasses() {
-  percentButtons.forEach((btn) => btn.classList.remove("active-btn"));
+  percentButtons.forEach((btn) => {
+    btn.classList.remove("active-btn");
+  });
   bill.style.backgroundColor = "";
   customBtn.style.backgroundColor = "";
   people.style.backgroundColor = "";

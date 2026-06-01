@@ -12,7 +12,7 @@ btnRating.forEach((botonRating) => {
 });
 
 document.querySelector(".btn-submit").addEventListener("click", () => {
-  if (rating != undefined) {
+  if (rating !== undefined) {
     document.getElementById("selected-rating").textContent = rating;
     document.getElementById("rating-state").classList.add("hidden");
     document.getElementById("thank-you-state").classList.remove("hidden");

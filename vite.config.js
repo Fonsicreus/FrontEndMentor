@@ -1,7 +1,7 @@
-import { defineConfig } from "vite";
-import { resolve } from "path";
+import { resolve } from "node:path";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 import biome from "vite-plugin-biome";
 
 export default defineConfig({
