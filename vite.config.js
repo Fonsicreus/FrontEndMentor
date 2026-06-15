@@ -42,6 +42,7 @@ export default defineConfig({
         "bookmark-landing-page": resolve(__dirname, "Bookmark-Landing-Page-Master/index.html"),
         "space-tourism": resolve(__dirname, "Space-Tourism-Website/index.html"),
         "results-summary-component": resolve(__dirname, "Results-Summary-Component/index.html"),
+        "product-list-with-cart": resolve(__dirname, "Product-List-With-Cart/index.html"),
       },
     },
   },

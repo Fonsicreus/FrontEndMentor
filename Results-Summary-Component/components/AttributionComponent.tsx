@@ -1,12 +1,12 @@
-type AttributionProps = {
+type AttributionComponentProps = {
   className?: string;
   linkClassName?: string;
 };
 
-function Attribution({
+function AttributionComponent({
   className = "",
   linkClassName = "",
-}: AttributionProps) {
+}: AttributionComponentProps) {
   return (
     <footer className={`attribution pt-10 ${className}`}>
       Challenge by{" "}
@@ -29,4 +29,4 @@ function Attribution({
   );
 }
 
-export default Attribution;
+export default AttributionComponent;
