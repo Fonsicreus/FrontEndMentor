@@ -1,4 +1,5 @@
 import Attribution from "./Attribution";
+import illustrationEmpty from "../assets/images/illustration-empty.svg";
 
 function ResultsComponent({ hasResults, results = [0, 0] }) {
   const [monthlyPayment, totalPayment] = results;
@@ -28,7 +29,7 @@ function ResultsComponent({ hasResults, results = [0, 0] }) {
 
   return (
     <div className="bg-slate-900 rounded-bl-[80px] md:rounded-bl-none p-10 flex flex-col items-center justify-center text-center min-h-full">
-      <img src="./assets/images/illustration-empty.svg" alt="Illustration" className="mb-6" />
+      <img src={illustrationEmpty} alt="Illustration" className="mb-6" />
       <h2 className="text-2xl font-bold text-white mb-4">Results shown here</h2>
       <p className="text-slate-300 max-w-sm">Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
     </div>

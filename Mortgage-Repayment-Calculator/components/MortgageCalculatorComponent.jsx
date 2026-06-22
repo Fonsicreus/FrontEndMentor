@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ResultsComponent from "./ResultsComponent";
+import iconCalculator from "../assets/images/icon-calculator.svg";
 
 const MAX_AMOUNT = "999999999999999999999999999";
 const MAX_TERM = 9999;
@@ -230,7 +231,7 @@ function MortgageCalculatorComponent() {
           className="flex items-center gap-3 bg-lime hover:bg-lime/80 text-slate-900 font-bold text-lg py-3 px-8 rounded-full cursor-pointer w-full md:w-auto justify-center"
           onClick={handleCalculate}
         >
-          <img src="./assets/images/icon-calculator.svg" alt="Calculator" className="size-6" />
+          <img src={iconCalculator} alt="Calculator" className="size-6" />
           Calculate Repayments
         </button>
       </div>
