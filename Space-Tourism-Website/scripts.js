@@ -15,6 +15,9 @@ import titanPng from "./assets/destination/image-titan.png";
 import launchVehiclePortrait from "./assets/technology/image-launch-vehicle-portrait.jpg";
 import spaceCapsulePortrait from "./assets/technology/image-space-capsule-portrait.jpg";
 import spaceportPortrait from "./assets/technology/image-spaceport-portrait.jpg";
+// Mobile Menu Icons
+import iconHamburger from "./assets/shared/icon-hamburger.svg";
+import iconClose from "./assets/shared/icon-close.svg";
 // Destination Planet Images
 import spaceData from "./data.json" with { type: "json" };
 
@@ -249,8 +252,9 @@ function updateTechnology(index) {
   if (techDescription) techDescription.textContent = tech.description;
 
   if (techImage) {
-    const nameKey = tech.name.replace(/\s+/g, "").replace(/^\w/, (c) => c.toLowerCase());
-    techImage.src = images.technology[nameKey]?.portrait || tech.images.portrait;
+    // Use index-based lookup to avoid camelCase mismatch with data.json names
+    const techPortraits = [launchVehiclePortrait, spaceportPortrait, spaceCapsulePortrait];
+    techImage.src = techPortraits[index] || tech.images.portrait;
     techImage.alt = tech.name;
   }
 
@@ -288,12 +292,12 @@ function setupMobileMenu() {
     if (isOpen) {
       navbar.classList.add("translate-x-full");
       navbar.classList.remove("translate-x-0");
-      menuIcon.src = "./assets/shared/icon-hamburger.svg";
+      menuIcon.src = iconHamburger;
       menuIcon.alt = "menu";
     } else {
       navbar.classList.remove("translate-x-full");
       navbar.classList.add("translate-x-0");
-      menuIcon.src = "./assets/shared/icon-close.svg";
+      menuIcon.src = iconClose;
       menuIcon.alt = "close";
     }
   });
@@ -303,7 +307,7 @@ function setupMobileMenu() {
     btn.addEventListener("click", () => {
       navbar.classList.add("translate-x-full");
       navbar.classList.remove("translate-x-0");
-      menuIcon.src = "./assets/shared/icon-hamburger.svg";
+      menuIcon.src = iconHamburger;
       menuIcon.alt = "menu";
     });
   });
