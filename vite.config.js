@@ -44,6 +44,7 @@ export default defineConfig({
         "results-summary-component": resolve(__dirname, "Results-Summary-Component/index.html"),
         "product-list-with-cart": resolve(__dirname, "Product-List-With-Cart/index.html"),
         "mortgage-repayment-calculator": resolve(__dirname, "Mortgage-Repayment-Calculator/index.html"),
+        "rest-countries-api-with-color-theme-switcher": resolve(__dirname, "Rest-Countries-Api-With-Color-Theme-Switcher-Master/index.html"),
       },
     },
   },
